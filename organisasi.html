@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembaga & Organisasi - Wora Wari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <nav class="bg-blue-900 text-white p-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl flex items-center gap-2">
+                <i class="fas fa-arrow-left mr-2"></i> Wora Wari
+            </a>
+            
+            <div class="hidden md:flex gap-6 font-medium">
+                <a href="index.html" class="hover:text-yellow-400 transition">Beranda</a>
+                <a href="tentang.html" class="hover:text-yellow-400 transition">Tentang</a>
+                <a href="budaya.html" class="hover:text-yellow-400 transition">Budaya</a>
+                <a href="umkm.html" class="hover:text-yellow-400 transition">UMKM</a>
+                <a href="organisasi.html" class="hover:text-yellow-400 transition border-b-2 border-yellow-400">Lembaga</a>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900/95 backdrop-blur-md mt-4 rounded-2xl overflow-hidden shadow-xl border border-white/10 transition-all duration-300">
+            <div class="flex flex-col p-6 space-y-4 text-white font-medium">
+                <a href="index.html" class="mobile-link hover:text-yellow-400">Beranda</a>
+                <a href="tentang.html" class="mobile-link hover:text-yellow-400">Tentang</a>
+                <a href="budaya.html" class="mobile-link hover:text-yellow-400">Budaya</a>
+                <a href="umkm.html" class="mobile-link hover:text-yellow-400">UMKM</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-16">
+        <h1 class="text-4xl font-black text-center mb-16 uppercase tracking-tight">Detail Lembaga</h1>
+
+        <div class="max-w-4xl mx-auto space-y-12">
+            <section id="pkk" class="scroll-mt-24 p-8 md:p-12 bg-white rounded-[2rem] shadow-lg border-t-8 border-blue-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold uppercase">PKK</h2>
+                        <p class="text-blue-500 font-medium text-sm italic">Pemberdayaan Kesejahteraan Keluarga</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed italic">
+                    PKK Padukuhan Wora Wari aktif dalam membina keluarga melalui program pokok PKK. Fokus utama kami saat ini adalah pencegahan stunting melalui pembinaan kesehatan keluarga melalui Posyandu balita, dan Posbindu lansia.
+                </p>
+            </section>
+
+            <section id="takmir" class="scroll-mt-24 p-8 md:p-12 bg-white rounded-[2rem] shadow-lg border-t-8 border-green-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold uppercase">Takmir Masjid</h2>
+                        <p class="text-green-500 font-medium text-sm italic">Manajemen Spiritual & Ibadah</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed italic">
+                    Lembaga Takmir Masjid Wora Wari berperan sebagai pusat pembinaan karakter masyarakat. Selain menyelenggarakan ibadah rutin, kami juga mengelola pengajian rutin lapanan, Songsong Ramadhan, buka puasa bersama, dan juga tadarus bersama.
+                </p>
+            </section>
+
+            <section id="remaja" class="scroll-mt-24 p-8 md:p-12 bg-white rounded-[2rem] shadow-lg border-t-8 border-indigo-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold uppercase">Remaja Masjid (RESMA)</h2>
+                        <p class="text-indigo-500 font-medium text-sm italic">Wadah Kreativitas Pemuda</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed italic">
+                    RESMA Wora Wari menjadi penggerak utama dalam kegiatan Masjid dan acara besar seperti peringatan hari besar keagamaan dan nasional. Kami melatih kemandirian pemuda melalui kegiatan sosial dan olahraga.
+                </p>
+            </section>
+
+            <section id="kwt" class="scroll-mt-24 p-8 md:p-12 bg-white rounded-[2rem] shadow-lg border-t-8 border-emerald-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold uppercase">Kelompok Wanita Tani (KWT)</h2>
+                        <p class="text-emerald-500 font-medium text-sm italic">Kemandirian Pangan Lokal</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed italic">
+                    KWT Wora Wari berfokus pada pemanfaatan pekarangan rumah untuk budidaya sayuran dan buah organik. Hasil dari KWT digunakan untuk memenuhi gizi keluarga secara mandiri dan sebagian dipasarkan untuk meningkatkan pendapatan anggota.
+                </p>
+            </section>
+
+            <section id="kt" class="scroll-mt-24 p-8 md:p-12 bg-white rounded-[2rem] shadow-lg border-t-8 border-indigo-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold uppercase">Karung Taruna </h2>
+                        <p class="text-indigo-500 font-medium text-sm italic">Semangat Pemuda Berkarya</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 leading-relaxed italic">
+                    Karang Taruna menjadi wadah bagi para pemuda untuk berperan aktif dalam kegiatan sosial, pengembangan kreativitas, serta pembangunan lingkungan. Melalui kebersamaan dan gotong royong, pemuda dapat menciptakan berbagai program yang bermanfaat bagi masyarakat sekaligus meningkatkan kepedulian dan solidaritas antarwarga.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-8 text-center mt-12">
+        <p class="text-slate-500 text-xs tracking-[0.4em] uppercase font-bold">© 2026 Padukuhan Wora Wari. Terakhir di Update Februari 2026</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuToggle.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('fa-bars', isHidden);
+            menuIcon.classList.toggle('fa-times', !isHidden);
+        });
+    </script>
+</body>
+</html>

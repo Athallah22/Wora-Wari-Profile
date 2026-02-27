@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Padukuhan Wora Wari | Sukoreno</title>
+    <meta name="description" content="Website resmi profil Padukuhan Wora Wari, Kalurahan Sukoreno. Informasi kependudukan, potensi UMKM, dan kearifan lokal.">
+    <link rel="icon" type="image/png" href="publik/Logo Tranparan.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 scroll-smooth">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 px-6 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-white font-bold text-xl tracking-tight logo-text">Wora Wari</span>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-white font-medium">
+                <a href="index.html" class="hover:text-yellow-400 transition border-b-2 border-yellow-400">Beranda</a>
+                <a href="tentang.html" class="hover:text-yellow-400 transition">Tentang</a>
+                <a href="budaya.html" class="hover:text-yellow-400 transition">Budaya</a>
+                <a href="umkm.html" class="hover:text-yellow-400 transition">UMKM</a>
+                <a href="organisasi.html" class="hover:text-yellow-400 transition">Lembaga</a>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900/95 backdrop-blur-md mt-4 rounded-2xl overflow-hidden shadow-xl border border-white/10 transition-all duration-300">
+            <div class="flex flex-col p-6 space-y-4 text-white font-medium">
+                <a href="index.html" class="mobile-link hover:text-yellow-400">Beranda</a>
+                <a href="tentang.html" class="mobile-link hover:text-yellow-400">Tentang</a>
+                <a href="budaya.html" class="mobile-link hover:text-yellow-400">Budaya</a>
+                <a href="umkm.html" class="mobile-link hover:text-yellow-400">UMKM</a>
+                <a href="organisasi.html" class="mobile-link hover:text-yellow-400">Lembaga</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center bg-blue-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80" alt="Background Desa" class="w-full h-full object-cover scale-110 animate-subtle-zoom">
+        </div>
+        <div class="relative z-10 text-center px-4 opacity-0 animate-fade-in-up">
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-4 tracking-tight drop-shadow-2xl">Wora Wari</h1>
+             <p class="text-xl md:text-2xl font-light mb-8 italic text-blue-100">"Selamat datang di Padukuhan Wora Wari"</p>
+            <div class="flex justify-center">
+                <a href="tentang.html" class="bg-yellow-400 text-blue-900 px-12 py-3 rounded-xl font-bold hover:scale-105 transition shadow-xl active:scale-95">
+                    Pelajari Profil Dusun
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800 mb-8 uppercase tracking-tighter italic">
+                    Sekilas <span class="text-blue-600">Tentang</span> Wora Wari
+                </h2>
+                <div class="h-1.5 w-20 bg-yellow-400 mx-auto mb-10 rounded-full"></div>
+                
+                <p class="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8">
+                    Dusun Wora Wari terletak di wilayah strategis Kalurahan Sukoreno, Kapanewon Sentolo, Kabupaten Kulon Progo. 
+                    Mayoritas penduduknya bermata pencaharian sebagai petani yang tetap memegang teguh semangat gotong royong dan kearifan lokal dalam bermasyarakat.
+                </p>
+
+                <a href="tentang.html" class="text-blue-600 font-bold hover:underline">Baca Profil Lengkap & Tokoh Masyarakat →</a>
+                
+                <div class="mt-12 flex justify-center gap-8 text-blue-600">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-3xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Sentolo</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-seedling text-3xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Agraris</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-hands-helping text-3xl mb-2"></i>
+                        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Gotong Royong</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="statistik" class="py-24 bg-slate-50 relative border-t border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800 mb-8 uppercase tracking-tighter italic">
+                    Analisis <span class="text-blue-600">Sumber Daya</span> Manusia
+                </h2>
+                <div class="h-1.5 w-20 bg-yellow-400 mx-auto mb-10 rounded-full"></div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-blue-100 transition hover:shadow-md">
+                        <i class="fas fa-users text-blue-500 mb-3 opacity-70 block text-xl"></i>
+                        <span class="block text-3xl md:text-4xl font-black text-blue-600 mb-1">433</span>
+                        <span class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">Total Jiwa</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-indigo-100 transition hover:shadow-md">
+                        <i class="fas fa-id-card text-indigo-500 mb-3 opacity-70 block text-xl"></i>
+                        <span class="block text-3xl md:text-4xl font-black text-indigo-600 mb-1">144</span>
+                        <span class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">KK</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-slate-200 transition hover:shadow-md">
+                        <i class="fas fa-map text-slate-500 mb-3 opacity-70 block text-xl"></i>
+                        <span class="block text-3xl md:text-4xl font-black text-slate-700 mb-1">2</span>
+                        <span class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">RW</span>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-slate-200 transition hover:shadow-md">
+                        <i class="fas fa-house-user text-slate-500 mb-3 opacity-70 block text-xl"></i>
+                        <span class="block text-3xl md:text-4xl font-black text-slate-700 mb-1">4</span>
+                        <span class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">RT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organisasi" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black mb-16 uppercase tracking-tighter italic">Lembaga & Organisasi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <a href="organisasi.html#pkk" class="p-8 bg-slate-800 rounded-3xl hover:border-blue-400 border border-transparent transition-all hover:-translate-y-2 block group">
+                    <i class="fas fa-female text-3xl mb-4 text-blue-400 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold uppercase">PKK</h3>
+                    <p class="text-xs text-slate-400 mt-2 italic">Pemberdayaan Keluarga</p>
+                </a>
+
+                <a href="organisasi.html#takmir" class="p-8 bg-slate-800 rounded-3xl hover:border-green-400 border border-transparent transition-all hover:-translate-y-2 block group">
+                    <i class="fas fa-mosque text-3xl mb-4 text-green-400 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold uppercase">Takmir Masjid</h3>
+                    <p class="text-xs text-slate-400 mt-2 italic">Manajemen Spiritual</p>
+                </a>
+
+                <a href="organisasi.html#remaja" class="p-8 bg-slate-800 rounded-3xl hover:border-indigo-400 border border-transparent transition-all hover:-translate-y-2 block group">
+                    <i class="fas fa-mosque text-3xl mb-4 text-green-400 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold uppercase">Remaja Masjid</h3>
+                    <p class="text-xs text-slate-400 mt-2 italic">Wadah Pemuda</p>
+                </a>
+
+                <a href="organisasi.html#kwt" class="p-8 bg-slate-800 rounded-3xl hover:border-emerald-400 border border-transparent transition-all hover:-translate-y-2 block group">
+                    <i class="fas fa-leaf text-3xl mb-4 text-emerald-400 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold uppercase">KWT</h3>
+                    <p class="text-xs text-slate-400 mt-2 italic">Wanita Tani</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-slate-900 text-white py-12 px-6 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-xs tracking-[0.4em] uppercase font-bold mb-2">© 2026 Padukuhan Wora Wari. Terakhir di Update Februari 2026</p>
+        <p class="text-slate-600 text-[10px] uppercase font-light">TIM KKN UAD 155 UNIT III.A.3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
